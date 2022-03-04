@@ -1,20 +1,121 @@
-*{
-    padding:0;
-    margin:0;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: rgb(97, 145, 248);
 }
 
-.main-section{
-    width:500px;
+.main-section {
+    box-sizing: border-box;
+    width: 600px;
+    height: 830px;
+    text-align: center;
+    align-items: center;
     background-color: red;
-    margin:auto;
-    margin-top:200px;
+    margin: auto;
+    margin-top: 200px;
+    display: grid;
+    grid-template-areas:
+        "result result result result"
+        "calculating calculating calculating calculating"
+        "number7 number8 number9 numberDivide"
+        "number4 number5 number6 numbermulti"
+        "number1 number2 number3 numberminus"
+        "number0 numberC numberdot numberplus"
+        "numberequal numberequal numberequal numberequal";
+    gap: 0px 0px;
 }
 
-https://www.w3schools.com/css/tryit.asp?filename=trycss_grid
+.item {
+    box-sizing: border-box;
+    font-size: 50px;
+    border: solid black 2px;
+    padding: 28px;
+}
+
+.result {
+    grid-area: result;
+}
+
+.calculating {
+    grid-area: calculating;
+}
+
+.number9 {
+    grid-area: number9;
+
+}
+
+.number8 {
+    grid-area: number8;
+
+}
+
+.number7 {
+    grid-area: number7;
+}
+
+.number6 {
+    grid-area: number6;
+}
+
+.number5 {
+    grid-area: number5;
+}
+
+.number4 {
+    grid-area: number4;
+}
+
+.number3 {
+    grid-area: number3;
+}
+
+.number2 {
+    grid-area: number2;
+}
+
+.number1 {
+    grid-area: number1;
+
+}
+
+.number0 {
+    grid-area: number0;
+}
+
+.numberDivide {
+    grid-area: numberDivide;
+}
+
+.numbermulti {
+    grid-area: numbermulti;
+}
+
+.numberminus {
+    grid-area: numberminus;
+
+}
+
+.numberplus {
+    grid-area: numberplus;
+}
+
+.numberdot {
+    grid-area: numberdot;
+}
+
+.numberC {
+    grid-area: numberC;
+}
+
+.numberequal {
+    grid-area: numberequal;
+}
 
 
+/* https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_layout_named */
+/* https://www.w3schools.com/css/tryit.asp?filename=trycss_grid */
