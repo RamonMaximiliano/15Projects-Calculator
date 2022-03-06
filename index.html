@@ -8,27 +8,25 @@
     <title>Calculator</title>
 </head>
 <body>
-
-
     <section class="main-section">
-        <div class="calculating calc">Calculing</div>
+        <div class="calculating calc"></div>
         <div class="result calc">Result</div>
-        <div class="item number9">9</div>
-        <div class="item number8">8</div>
-        <div class="item number7 ">7</div>
-        <div class="item number6">6</div>
-        <div class="item number5">5</div>
-        <div class="item number4">4</div>
-        <div class="item number3">3</div>
-        <div class="item number2">2</div>
-        <div class="item number1">1</div>
-        <div class="item number0">0</div>
-        <div class="item operator numberDivide">/</div>
-        <div class="item operator numbermulti">*</div>
-        <div class="item operator numberminus">-</div>
-        <div class="item operator numberplus">+</div>
-        <div class="item operator numberdot">.</div>
-        <div class="item operator numberC">C</div>
+        <div class="item number9 primitive" id="9">9</div>
+        <div class="item number8 primitive" id="8">8</div>
+        <div class="item number7 primitive " id="7">7</div>
+        <div class="item number6 primitive" id="6">6</div>
+        <div class="item number5 primitive" id="5">5</div>
+        <div class="item number4 primitive" id="4">4</div>
+        <div class="item number3 primitive" id="3">3</div>
+        <div class="item number2 primitive" id="2">2</div>
+        <div class="item number1 primitive" id="1">1</div>
+        <div class="item number0 primitive" id="0">0</div>
+        <div class="item operator numberDivide primitive" id="/">/</div>
+        <div class="item operator numbermulti primitive" id="*">*</div>
+        <div class="item operator numberminus primitive" id="-">-</div>
+        <div class="item operator numberplus primitive" id="+">+</div>
+        <div class="item operator numberdot primitive" id=".">.</div>
+        <div class="item operator numberC primitive" onclick="cleanMath()">C</div>
         <div class="item numberequal" onclick="calc()">=</div>
     </section>
 

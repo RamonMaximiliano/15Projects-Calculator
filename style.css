@@ -37,6 +37,7 @@ body {
     background-color: #79C5FF;
 }
 
+
 .item:hover {
     background-color: #A9DAFF
 }
@@ -62,6 +63,7 @@ body {
 }
 
 .calc {
+    height:125px;
     background-color: #0042cf;
     box-sizing: border-box;
     font-size: 50px;
