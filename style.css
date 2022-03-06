@@ -5,13 +5,13 @@
 }
 
 body {
-    background-color: rgb(97, 145, 248);
+    background-color: rgb(7, 31, 83);
 }
 
 .main-section {
     box-sizing: border-box;
     width: 600px;
-    height: 830px;
+    height: 848px;
     text-align: center;
     align-items: center;
     background-color: red;
@@ -34,6 +34,19 @@ body {
     font-size: 50px;
     border: solid black 2px;
     padding: 28px;
+    background-color: #79C5FF;
+}
+
+.item:hover {
+    background-color: #A9DAFF
+}
+
+.operator {
+    background-color: #0f82da;
+}
+
+.operator:hover {
+    background-color: #4ba5eb;
 }
 
 .result {
@@ -46,8 +59,16 @@ body {
 
 .number9 {
     grid-area: number9;
-
 }
+
+.calc {
+    background-color: #0042cf;
+    box-sizing: border-box;
+    font-size: 50px;
+    border: solid black 2px;
+    padding: 28px;
+}
+
 
 .number8 {
     grid-area: number8;
@@ -115,6 +136,15 @@ body {
 .numberequal {
     grid-area: numberequal;
 }
+
+.numberequal {
+    background-color: #0199ff;
+}
+
+.numberequal:hover {
+    background-color: #88cbff;
+}
+
 
 
 /* https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_layout_named */
