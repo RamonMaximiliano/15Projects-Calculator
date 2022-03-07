@@ -11,15 +11,16 @@ body {
 .main-section {
     box-sizing: border-box;
     width: 600px;
-    height: 848px;
+    height: 840px;
     text-align: center;
     align-items: center;
-    background-color: red;
     margin: auto;
     margin-top: 200px;
     display: grid;
     grid-template-areas:
+        "title title title title"
         "result result result result"
+        "calc-title calc-title calc-title calc-title"
         "calculating calculating calculating calculating"
         "number7 number8 number9 numberDivide"
         "number4 number5 number6 numbermulti"
@@ -62,14 +63,44 @@ body {
     grid-area: number9;
 }
 
+.title{
+    grid-area: title;
+}
+.calc-title{
+    grid-area: calc-title;
+}
+
+
+
 .calc {
-    height:125px;
+    height:100px;
+    text-align: right;
     background-color: #0042cf;
     box-sizing: border-box;
     font-size: 50px;
-    border: solid black 2px;
-    padding: 28px;
+    border-bottom: solid black 2px;
+    border-right: solid black 2px;
+    border-left: solid black 2px;
+    padding-bottom: 28px;
+    padding-right: 28px;
+    padding-left: 28px;
 }
+
+.title, .calc-title {
+    height:60px;
+    text-align: left;
+    padding-left:20px;
+    background-color: #0042cf;
+    box-sizing: border-box;
+    font-size: 40px;
+    border-top: solid black 2px;
+    border-left: solid black 2px;
+    border-right: solid black 2px;
+}
+
+
+
+
 
 
 .number8 {
