@@ -70,10 +70,8 @@ body {
     grid-area: calc-title;
 }
 
-
-
 .calc {
-    height:100px;
+    min-height:100px;
     text-align: right;
     background-color: #0042cf;
     box-sizing: border-box;
@@ -98,14 +96,8 @@ body {
     border-right: solid black 2px;
 }
 
-
-
-
-
-
 .number8 {
     grid-area: number8;
-
 }
 
 .number7 {

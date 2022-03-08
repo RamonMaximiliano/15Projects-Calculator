@@ -1,13 +1,11 @@
-
 let mathCalc = document.querySelectorAll(".primitive");
 for (let number of mathCalc) {
     document.addEventListener("click", showTheMath);
 }
 
-
 function showTheMath(numberCalc) {
     let resultText = document.querySelector(".calculating").innerHTML
-    document.querySelector(".calculating").innerHTML = `${resultText}${numberCalc.target.id}`
+   document.querySelector(".calculating").innerHTML = `${resultText}${numberCalc.target.id}`
 }
 
 function calc() {
@@ -22,12 +20,7 @@ function cleanMath() {
     document.querySelector(".calculating").innerHTML = ''
 }
 
-//quando clicar operator 
-//mostra result e preparar adicionar numero
-
-
 function calculate() {
-
     //Estudar sobre regex conforme expressão abaixo: (stringToCalc.match(/[*]/g) || []).length;
     let stringToCalc = document.querySelector(".calculating").innerHTML
     let multiply = (stringToCalc.match(/[*]/g) || []).length;
@@ -38,5 +31,13 @@ function calculate() {
         document.querySelector(".result").innerHTML = eval(stringToCalc)
         document.querySelector(".calculating").innerHTML = eval(stringToCalc)
     }
-
 }
+
+let calculatingString = document.querySelector(".calculating").innerHTML
+let resultString = document.querySelector(".result").innerHTML
+
+if(calculatingString.length > 15){
+    calculatingString.splice(15)
+    console.log(calculatingString)
+}
+
