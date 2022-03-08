@@ -15,7 +15,7 @@ body {
     text-align: center;
     align-items: center;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 100px;
     display: grid;
     grid-template-areas:
         "title title title title"
@@ -63,15 +63,16 @@ body {
     grid-area: number9;
 }
 
-.title{
+.title {
     grid-area: title;
 }
-.calc-title{
+
+.calc-title {
     grid-area: calc-title;
 }
 
 .calc {
-    min-height:100px;
+    min-height: 100px;
     text-align: right;
     background-color: #0042cf;
     box-sizing: border-box;
@@ -85,9 +86,9 @@ body {
 }
 
 .title, .calc-title {
-    height:60px;
+    height: 60px;
     text-align: left;
-    padding-left:20px;
+    padding-left: 20px;
     background-color: #0042cf;
     box-sizing: border-box;
     font-size: 40px;
